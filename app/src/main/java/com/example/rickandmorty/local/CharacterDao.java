@@ -21,4 +21,7 @@ public interface CharacterDao {
 
     @Query("SELECT * FROM characterentry WHERE name LIKE '%' || :name || '%'")
     LiveData<List<CharacterModel>> getCharacterByName(String name);
+
+    @Query("DELETE FROM characterentry WHERE id = :id")
+     void deleteByUserId(int id);
 }

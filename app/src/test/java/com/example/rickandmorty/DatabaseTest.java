@@ -49,4 +49,10 @@ public class DatabaseTest {
         userDao.insertCharacter(characterEntry2);
         userDao.getAllCharacters();
     }
+
+    @Test
+    public void deleteCharacterById() throws Exception {
+        CharacterEntry characterEntry = new CharacterEntry(1,"benjamin","https://rickandmortyapi.com/api/character/avatar/361.jpeg","human","dead", "male");
+        userDao.deleteByUserId(characterEntry.getId());
+    }
 }
