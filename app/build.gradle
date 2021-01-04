@@ -60,7 +60,7 @@ dependencies {
     implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
     implementation 'androidx.room:room-rxjava2:2.1.0-alpha06'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    //AndroidJUnitRunner and JUnit Rules
+    //AndroidJUnitRunner,  JUnit Rules and Robolectric
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test:rules:1.2.0'
     testImplementation 'junit:junit:4.12'
