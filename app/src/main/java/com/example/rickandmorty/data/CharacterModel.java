@@ -31,6 +31,7 @@ public class CharacterModel implements Parcelable {
         image = in.readString();
         gender = in.readString();
     }
+
     public CharacterModel(int id, String name, String gender, String status, String species, String image) {
         this.id = id;
         this.name = name;

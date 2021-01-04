@@ -23,5 +23,5 @@ public interface CharacterDao {
     LiveData<List<CharacterModel>> getCharacterByName(String name);
 
     @Query("DELETE FROM characterentry WHERE id = :id")
-     void deleteByUserId(int id);
+    void deleteByUserId(int id);
 }
