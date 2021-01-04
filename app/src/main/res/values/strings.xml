@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RickandMorty</string>
+    <string name="status">Status</string>
+    <string name="species">Species</string>
+    <string name="gender">Gender</string>
+    <string name="search">Search</string>
+    <string name="mainFragment">mainFragment</string>
 </resources>
