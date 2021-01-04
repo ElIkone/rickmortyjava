@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/details_layout"
+    android:background="@color/white"
+
+    android:clickable="true"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
