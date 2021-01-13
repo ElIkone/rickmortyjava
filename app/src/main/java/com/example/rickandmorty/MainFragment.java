@@ -23,6 +23,7 @@ import com.example.rickandmorty.characterDetail.CharacterDetailFragment;
 import com.example.rickandmorty.data.CharacterAdapter;
 import com.example.rickandmorty.data.CharacterModel;
 import com.example.rickandmorty.databinding.MainFragmentBinding;
+import com.example.rickandmorty.ui.DividerItemDecoration;
 
 public class MainFragment extends Fragment implements CharacterAdapterHandler {
     MainFragmentBinding binding;
@@ -44,10 +45,10 @@ public class MainFragment extends Fragment implements CharacterAdapterHandler {
         View view = binding.getRoot();
         mLayoutManager = new GridLayoutManager(getActivity(), 1);
         binding.charactersRv.setLayoutManager(mLayoutManager);
+        binding.charactersRv.addItemDecoration(new DividerItemDecoration(getContext(),R.drawable.divider));
         binding.charactersRv.setAdapter(mAdapter);
         return view;
     }
-
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
