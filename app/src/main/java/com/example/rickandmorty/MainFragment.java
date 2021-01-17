@@ -122,7 +122,7 @@ public class MainFragment extends Fragment implements CharacterAdapterHandler {
 
             @Override
             public boolean onQueryTextChange(String s) {
-                if (isVisible()) {
+                if (sv.isIconified()) {
                     return true;
                 } else {
                     searching = true;
